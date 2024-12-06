@@ -27,7 +27,7 @@ Run `checkpoint.py` to see the fully trained agent in action, or copy and paste 
 
 <img src="visuals/neural_net_diagram.png" alt="Neural Network Diagram" width="300">
 
-The neural network takes inputs of the position, velocity, angle, and angular velocities of the body that represents the person and the body that represents the pogo. The neural network then calculates forward resulting in 5 outputs that control the movement of the pogostick.
+The neural network takes inputs of the position, velocity, angle, and angular velocities of the body that represents the person and the body that represents the pogo. The neural network then calculates forward resulting in 5 outputs that control the movement of the pogostick. Note that in this image the hidden layers are `[6, 6]`, but when training I used hidden layers of `[20, 20, 20, 20, 20, 20]`
 
 A child is created out of 2 neural networks by randomly selecting the weights and biases from each parent. For example, if parent 1 has biases `[0.1, 0.2, 0.3, 0.4, 0.5]` and parent 2 has biases `[0.6, 0.7, 0.8, 0.9, 1.0]`, the resulting child may have biases `[0.1, 0.7, 0.8, 0.4, 0.5]`.
 
